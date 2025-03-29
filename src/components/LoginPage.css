@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  overflow: hidden;
+}
+
+.login-form {
+  flex: 1;
+  padding: 40px;
+  font-family:Rotunda, sans-serif;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-left: 200px;
+  padding-right: 300px;
+  justify-content: center; /* Center content vertically */
+}
+
+.login-form h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.login-form p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.login-form input,
+.login-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form .form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.login-form .form-options label {
+  display: flex;
+  align-items: center; /* Align checkbox and text vertically */
+  gap: 5px; /* Add spacing between checkbox and text */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.login-form .form-options a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.login-form button {
+  width: 15%;
+  padding: 10px;
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.login-form button:hover {
+  background-color: #574bff;
+}
+
+.login-branding {
+  flex: 1;
+  background: linear-gradient(135deg, #6c63ff, #8a85ff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center;
+  border-radius: 0 0 0 200px;
+  color: #fff;
+  width: 200px;
+  height: 800px;
+}
+
+.branding-logo {
+  height: 150px; /* Adjusted size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Adjusted spacing */
+}
+
+.logo-image {
+  height: 150px; /* Adjusted size */
+  object-fit: contain;
+}
+
+.login-branding h2 {
+  font-size: 24px;
+  margin-top: 10px; /* Adjusted spacing */
+}
