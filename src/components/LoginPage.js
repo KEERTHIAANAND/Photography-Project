@@ -1,14 +1,21 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./LoginPage.css";
 
 function LoginPage() {
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault(); // Prevent form submission
+    navigate("/dashboard"); // Navigate to the Dashboard page
+  };
+
   return (
     <div className="login-container">
       <div className="login-form">
         <h1>Branch Login</h1>
-        <p>Enter your email and password to log in!
-        </p>
-        <form>
+        <p>Enter your email and password to log in!</p>
+        <form onSubmit={handleLogin}>
           <label>
             <select>
               <option>Select your Branch...</option>
@@ -16,16 +23,16 @@ function LoginPage() {
           </label>
           <label>
             Email
-            <input type="email" placeholder="mail@simmple.com" required />
+            <input type="email" placeholder="admin@mail.com" required />
           </label>
           <label>
             Password
-            <input type="password" placeholder="Min. 8 characters" required />
+            <input type="password" placeholder="8 Characters" required />
           </label>
           <div className="form-options">
             <label>
               <input type="checkbox" />
-                 Keep me logged in
+              Keep me logged in
             </label>
             <a href="#">Forget password?</a>
           </div>
