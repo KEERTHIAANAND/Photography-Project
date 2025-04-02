@@ -10,6 +10,8 @@ function LoginPage() {
     navigate("/dashboard"); // Navigate to the Dashboard page
   };
 
+  const branches = ["Pollachi", "Coimbatore", "Chennai", "Erode"];
+
   return (
     <div className="login-container">
       <div className="login-form">
@@ -17,8 +19,13 @@ function LoginPage() {
         <p>Enter your email and password to log in!</p>
         <form onSubmit={handleLogin}>
           <label>
-            <select>
-              <option>Select your Branch...</option>
+            <select required>
+              <option value="">Select your Branch...</option>
+              {branches.map((branch, index) => (
+                <option key={index} value={branch}>
+                  {branch}
+                </option>
+              ))}
             </select>
           </label>
           <label>
