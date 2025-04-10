@@ -185,9 +185,23 @@
 .chart {
   flex: 1;
   background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 15px; /* Reduced padding */
+  border-radius: 10px; /* Adjusted border radius */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px; /* Reduced margin */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the chart */
+  max-height: 300px; /* Set a maximum height for the chart card */
+}
+
+.chart:first-child {
+  width: 100%; /* Increase the width of the first chart (line chart) */
+}
+
+.chart canvas {
+  max-width: 100%; /* Ensure the graph is responsive */
+  max-height: 250px; /* Limit the height of the graph */
 }
 
 .recent-payments {
@@ -195,6 +209,7 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px; /* Add space below the card */
 }
 
 .recent-payments-header {
@@ -224,12 +239,34 @@
 .recent-payments li {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 10px;
   border-bottom: 1px solid #f0f0f0;
 }
 
 .recent-payments li:last-child {
   border-bottom: none;
+}
+
+.recent-payments ul li {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.recent-payments ul li .profile-picture {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically align items */
+    gap: 10px; /* Space between picture and name */
+}
+
+.recent-payments ul li .profile-picture img {
+  width: 40px; /* Adjusted size for better visibility */
+  height: 40px;
+  border-radius: 50%; /* Make the picture circular */
+  object-fit: cover;
+  margin-right: 10px; /* Add spacing between the picture and the name */
 }
 
 .price {
