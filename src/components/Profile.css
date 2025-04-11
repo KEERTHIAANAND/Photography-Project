@@ -1,0 +1,173 @@
+.profile-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4f7fe;
+}
+
+.sidebar {
+  width: 225px;
+  background-color: transparent; /* Removed the background color */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.sidebar-logo-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.sidebar-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 15px;
+  
+}
+
+.sidebar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color:#000000;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar-menu li.active a {
+  font-weight: bold;
+}
+
+.logout-button {
+  background: linear-gradient(135deg, #6c63ff, #8a85ff);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.profile-main {
+  flex: 1;
+  padding: 20px;
+}
+
+.profile-header {
+  position: relative; /* Enable positioning for child elements */
+  color: #fff;
+  padding-bottom: 70px;
+  border-radius: 10px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-header h4 {
+  color: #707eae;
+}
+
+.profile-header h1 {
+  color: #2b3674;
+}
+
+.profile-header h2 {
+  color: #05cd99;
+}
+
+.profile-header h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.profile-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card h3 {
+  background: linear-gradient(135deg, #6c63ff, #8a85ff);
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  height: 60px;
+  width: 100%; /* Adjusted to take full width */
+  text-align: left; /* Align text to the left */
+  margin: 0; /* Remove horizontal centering */
+  display: flex;
+  font-size: 20px;
+  align-items: center; /* Vertically center the text */
+}
+
+.profile-body {
+  display: flex;
+  justify-content: space-between; /* Space between details and picture */
+  align-items: center; /* Align items vertically */
+}
+
+.profile-details {
+  flex: 1; /* Take up remaining space */
+}
+
+.profile-details p {
+  margin: 15px;
+}
+
+.profile-picture-container {
+  position: absolute;
+  bottom: -30px; /* Position the picture to overlap the header */
+  right: 20px; /* Align to the right */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the picture and button horizontally */
+  margin-top: 20px;
+  margin-left: 20px; /* Add spacing from the details */
+}
+
+.profile-picture-large {
+  width: 60px; /* Adjust the size of the profile picture */
+  height: 60px;
+  border-radius: 50%; /* Make the picture circular */
+  object-fit: cover;
+  border: 3px solid #fff; /* Add a white border for contrast */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  margin-bottom: 15px; /* Add spacing between the picture and the button */
+}
+
+.edit-button {
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px; /* Rounded button */
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.edit-button:hover {
+  background-color: #574bff; /* Slightly darker color on hover */
+}

@@ -8,11 +8,12 @@
 .sidebar {
   width: 225px;
   height: 100vh; /* Full height */
-  background-color: 6c63ff;
+  background-color: transparent; /* Removed the background color */
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Ensure the logout button stays at the bottom */
   padding: 20px;
+  color:#000000;
 }
 
 .sidebar-logo {
@@ -35,6 +36,7 @@
 .sidebar-menu ul {
   list-style: none;
   padding: 0;
+  
 }
 
 .sidebar-menu li {
@@ -45,6 +47,8 @@
   cursor: pointer;
   border-left: 4px solid transparent; /* Default border */
   transition: all 0.3s ease;
+  color:#000000;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .sidebar-menu li.active {

@@ -104,6 +104,8 @@ function Dashboard() {
   const handleMenuClick = (menu) => {
     setActiveMenu(menu);
     if (menu === "Dashboard") navigate("/dashboard");
+    if (menu === "Price List") navigate("/price-list"); // Added missing navigation
+    if (menu === "Report") navigate("/report"); // Added missing navigation
     if (menu === "Profile") navigate("/profile");
   };
 

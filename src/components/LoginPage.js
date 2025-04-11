@@ -7,7 +7,7 @@ function LoginPage() {
 
   const handleLogin = (e) => {
     e.preventDefault(); // Prevent form submission
-    navigate("/dashboard"); // Navigate to the Dashboard page
+    navigate("/dashboard"); // Ensure navigation to the Dashboard page
   };
 
   const branches = ["Pollachi", "Coimbatore", "Chennai", "Erode"];
